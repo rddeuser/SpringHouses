@@ -14,7 +14,7 @@ import dmacc.repository.HouseRepository;
 import dmacc.beans.House;
 
 @SpringBootApplication
-public class SpringHousesApplication implements CommandLineRunner {
+public class SpringHousesApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringHousesApplication.class, args);
@@ -23,6 +23,7 @@ public class SpringHousesApplication implements CommandLineRunner {
 	@Autowired
 	HouseRepository repo;
 	
+	/*
 	@Override
 	public void run(String... args) throws Exception {
 		//create application context
@@ -38,5 +39,5 @@ public class SpringHousesApplication implements CommandLineRunner {
 			System.out.println(house.toString());
 		}//end for
 	}//end run
-
+	*/
 }//end SpringHousesApplication

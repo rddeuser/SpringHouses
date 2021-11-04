@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Add New House</title>
+</head>
+<body>
+<form th:object="${newHouse}" th:action="@{/update/{id}(id=${newHouse.id})}" method=POST>
+Bedrooms: <input name="bedrooms" size="20" th:field="*{bedrooms}"> <br />
+Bathrooms: <input name="bathrooms" size="10" th:field="*{bathrooms}"><br />
+Street: <input name="street" size="20" th:field="*{street}"><br />
+Square Feet: <input name="sqFeet" size="20" th:field="*{sqFeet}"><br />
+<input name="submit" type="submit" value="submit"/>
+</form>
+
+<a href="viewAll">View all Houses</a>
+</body>
+</html>
